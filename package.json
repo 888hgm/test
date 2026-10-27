@@ -1,0 +1,25 @@
+{
+  "name": "feishu-chart-plugin",
+  "version": "0.1.2",
+  "description": "Feishu Bitable dashboard chart with one stacked bar per selected status field",
+  "private": true,
+  "type": "module",
+  "output": "dist",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@lark-base-open/js-sdk": "1.0.2",
+    "echarts": "6.1.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "8.3.5"
+  }
+}
